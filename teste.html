@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Animation</title>
+<style>
+    .animate-left {
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+    }
+    
+    .animate-right {
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+</style>
+</head>
+<body>
+
+<div class="container" style="height: 2000px;">
+    <div class="animate-left" style="height: 500px; background-color: lightblue;">Elemento da Esquerda</div>
+    <div class="animate-right" style="height: 500px; background-color: lightgreen;">Elemento da Direita</div>
+    <div class="animate-left" style="height: 500px; background-color: lightcoral;">Outro Elemento da Esquerda</div>
+    <div class="animate-right" style="height: 500px; background-color: lightpink;">Outro Elemento da Direita</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $('.animate-left, .animate-right').each(function() {
+            var position = $(this).offset().top;
+            var windowHeight = $(window).height();
+            var windowTop = $(window).scrollTop();
+            var elementWidth = $(this).outerWidth();
+            var windowWidth = $(window).width();
+            var distanceFromLeft = $(this).offset().left;
+            var distanceFromRight = windowWidth - distanceFromLeft - elementWidth;
+            
+            if (position < windowTop + windowHeight) {
+                if ($(this).hasClass('animate-left')) {
+                    $(this).css('transform', 'translateX(0)');
+                } else if ($(this).hasClass('animate-right')) {
+                    $(this).css('transform', 'translateX(0)');
+                }
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
+    

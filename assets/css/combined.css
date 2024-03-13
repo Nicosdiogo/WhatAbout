@@ -9044,7 +9044,7 @@ a:hover>.nk-icon-search:after {
     margin-bottom: 30px;
     margin-left: -17px;
     margin-right: -17px;
-    text-align: center
+    text-align: center;
 }
 
 .nk-isotope-filter.nk-isotope-filter-active {
@@ -10925,32 +10925,34 @@ Separator
 
 .nov h2{
     color:#ffffffd9;
-    font-size:2.125rem;
+    font-size:1.825rem;
     font-family: 'Josefin Sans', serif;
     text-transform: none;
     font-weight: 700;
-    padding: 30px 0px;
+    padding: 30px 0px 20px 0px;
     text-transform: uppercase;
     text-align: center;
+    margin: 0px;
 }
 
 .nov h3{
     color:#ffffffd9;
-    font-size:1.25rem;
+    font-size:1.35rem;
     font-family: 'Josefin Sans', serif;
     text-transform: none;
     font-weight: 400;
     padding: 0px 0px;
-
+    margin: 0px;
 }
 .nov p{
-    font-size:14px;
+    font-size:18px;
     font-family: 'Josefin Sans', serif;
     text-transform: none;
     font-weight: 300;
     color: #fafafa;
-    padding: 0px 0px;
-    letter-spacing: 1.5px; 
+    padding: 8px 0px;
+    letter-spacing: 1.5px;
+    margin: 0px;
 }
 
 .nov i{
@@ -10968,3 +10970,46 @@ Separator
     margin-right: auto;
 }
 
+
+
+/***************************************************************************************/
+
+
+.product-page-content {
+	width: 100%;
+	overflow: hidden;
+	padding: 50px 13px 0;
+}
+
+
+.product-page-content .tab-content {
+	padding: 20px 15px;
+	background: #edeff1;
+}
+
+/* datasheet tab */
+.product-page-content .datasheet {
+	width: 100%;
+	font-size: inherit;
+}
+.product-page-content .datasheet th {
+	border-bottom: solid 2px #eee;
+	padding-bottom: 5px;
+	font-size: 15px;
+}
+.product-page-content .datasheet td {
+	padding: 5px 10px;
+	border-bottom: solid 2px #eee;
+}
+
+.animate-left {
+    width: 100%;
+    transform: translateX(-200%);
+    transition: transform 0.5s;
+}
+
+.animate-right {
+    width: 100%;
+    transform: translateX(200%);
+    transition: transform 0.5s;
+}

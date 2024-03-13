@@ -179,6 +179,73 @@ START: Navbar Mobile
                                 <div class="nk-gap-12 mt-12"></div>
                                 <h5 class="nk-post-title2">fashion - beauty - lifestyle - entertainment - sport</h5>
                                 <div class="nk-gap-2 mt-12"></div>
+
+                                <!-- Testando-->
+                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                <script>
+                                    $(document).ready(function(){
+                                        // Quando um link da guia é clicado
+                                        $('#myTab li a').click(function(){ // Alteração aqui
+                                            var tab_id = $(this).attr('href');
+                                
+                                            // Remove a classe 'active' de todas as guias e links
+                                            $('#myTab li').removeClass('active'); // Alteração aqui
+                                            $('.tab-pane').removeClass('active');
+                                
+                                            // Adiciona a classe 'active' à guia clicada e ao seu conteúdo
+                                            $(this).parent().addClass('active');
+                                            $(tab_id).addClass('active');
+                                        });
+                                    });
+                                </script>
+
+
+
+
+                                <div class="product-page-content">
+                                    <div class="nk-pagination nk-pagination-nobg nk-pagination-center">
+                                        <a href="#nk-toggle-filter">
+                                            <span class="nk-icon-squares"></span>
+                                        </a>
+                                    </div>
+                                    <ul id="myTab" class="nk-isotope-filter">
+                                        <li><a href="#Description" data-toggle="tab">Descrição</a></li>
+                                        <li class="active"><a href="#Information" data-toggle="tab">Informação</a></li>
+                                        <li><a href="#Comparar" data-toggle="tab">Comparação</a></li>
+                                    </ul>
+
+                                    
+                                        
+                                    
+                                    <div id="myTabContent" class="tab-content">
+                                      <div class="tab-pane fade" id="Description">
+                                        <p>Lorem ipsum dolor ut sit ame dolore adipiscing elit, sed sit nonumy nibh sed euismod laoreet
+                                          dolore magna aliquarm erat sit volutpat Nostrud duis molestie at dolore. Lorem ipsum dolor ut sit
+                                          ame dolore adipiscing elit, sed sit nonumy nibh sed euismod laoreet dolore magna aliquarm erat sit
+                                          volutpat Nostrud duis molestie at dolore. Lorem ipsum dolor ut sit ame dolore adipiscing elit, sed
+                                          sit nonumy nibh sed euismod laoreet dolore magna aliquarm erat sit volutpat Nostrud duis molestie
+                                          at dolore. </p>
+                                      </div>
+                                      <!-- Especificações-->
+                                      <div class="tab-pane fade in active" id="Information">
+                    
+                                        teste 123
+                    
+                                       
+                                      </div>
+                                      <div class="tab-pane fade " id="Comparar" >
+                                        <!--<p>There are no reviews for this product.</p>-->
+                                        <!-- BEGIN CONTENT -->
+                                        <div  class="col-md-9 col-sm-7">
+                                          <h1>Comparação com outro carro</h1>
+                                          
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <!-- Fim testando-->
+                                 
+                                  <br><br><br>
                                 <div class="nk-post-text">
                                     <p>Lesliana nasceu na cidade de Soyo, na província angolana do Zaire, porém foi em
                                         Benguela, terra natal de seu pai, onde passou grande parte de sua infância, com
@@ -355,7 +422,8 @@ START: Navbar Mobile
     <!-- START: Scripts -->
 
     <script src="assets/js/combined.js"></script>
-
+    <script src="assets/js/bootstrap.min.js"  type="text/javascript"></script>
+    <script src="assets/js/jquery.min.js"  type="text/javascript"></script>
     <!-- END: Scripts -->
 
 
