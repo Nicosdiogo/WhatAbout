@@ -1148,6 +1148,10 @@ code {
     margin-left: 91.666667%
 }
 
+.offset-xs-11 {
+    margin-left: 0
+}
+
 @media (min-width:576px) {
     .col-sm-1 {
         float: left;
@@ -5705,6 +5709,11 @@ h4 {
     padding-left: 15px
 }
 
+.col-xs-0 {
+    padding-right: 5px;
+    padding-left: 5px
+}
+
 .thead-default th {
     color: #444;
     background-color: #f7f7f7
@@ -8290,6 +8299,10 @@ blockquote.nk-blockquote-style-1 cite {
         width: 90%;
         margin: 0 20px
     }
+
+     .table-wrapper-responsive {
+		overflow-x: scroll;
+	}
 }
 
 .nk-carousel-2.nk-carousel-no-margin .flickity-slider>div {
@@ -10670,11 +10683,11 @@ Separator
 
 }
 .btn:hover {
-    background-color:#ffcb93;
-    color: #000;
+    opacity: .8;
+    color: #181818;
     text-decoration: none;
-    border:1px solid #ffcb93;
-    font-weight: 600;
+    border:1px solid #181818;
+ 
 }
 .btn-default {
     color: #333;
@@ -11038,4 +11051,81 @@ Separator
     width: 100%;
     transform: translateX(200%);
     transition: transform 0.5s;
+}
+
+
+/* compare goods */
+.compare-goods tr:first-child td.compare-info,
+.compare-goods tr:first-child td.compare-item {
+	background: no-repeat;
+	border-bottom: 3px solid #ECEBEB;
+}
+.goods-data td.compare-info {
+	width: 20%;
+	vertical-align: middle;
+	background: #F9F9F9;
+}
+.goods-data td.compare-info,
+.goods-data td.compare-item {
+	padding: 20px;
+}
+.compare-item {
+	text-align: center;
+}
+.compare-item img {
+	width: 100%;
+	max-width: 100px;
+}
+.compare-item h3 {
+	padding: 7px 0 4px;
+	margin: 0;
+}
+.compare-item strong {
+	color: #E84D1C;
+    font-size: 21px;
+    font-weight: normal;
+}
+.compare-item strong span {
+    font-size: 17px;
+}
+.compare-goods .btn-primary {
+	margin-right: 0;
+}
+
+.goods-data th h2 {
+	font-size: 17px;
+	padding: 8px 20px 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.goods-page .compare-item .btn-primary {
+	color: #fff;
+	float: none;
+}
+.goods-page .compare-item .btn-default {
+	border: 1px solid #EDEDED;
+	color: #A8AEB3;
+	background: transparent;
+	padding: 6px 13px;
+	float: none;
+	margin-top: 10px;
+}
+.goods-page .compare-item .btn-default:hover,
+.goods-page .compare-item .btn-default:focus,
+.goods-page .compare-item .btn-default:active {
+	border: 1px solid #A8AEB3;
+	color: #fff;
+	background: #A8AEB3;
+	padding: 6px 13px; 
+}
+
+.ecommerce .sidebar {
+	font: 15px 'PT Sans Narrow', sans-serif;
+	color: #3E4D5C;
+	text-transform: uppercase;
+}
+.ecommerce .sidebar .list-group-item {
+    background: #fff;
+    padding: 8px 10px 6px;
 }

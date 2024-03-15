@@ -31,15 +31,22 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700"
         rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="assets/css/combined.css">
 
+
+    <link href="./assets/css/loader.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+
     <!-- END: Styles -->
 
-
+    <script src="js/jquery.js"></script>
 
 </head>
 
@@ -53,14 +60,15 @@
         <!--
         START: Navbar
     -->
-        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top ">
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top " style="border-bottom: .5px solid #18181818;">
             <div class="container">
                 <div class="nk-nav-table">
-                    <a href="index.html" class="nk-nav-logo">
-                        <img src="assets/images/logo.svg" alt="" width="200px" class="nk-nav-logo-onscroll">
-                        <img src="assets/images/logo.png" alt="" width="200px">
+                    <div>
+                    <a href="index.html" class="nk-nav-logo" >
+                        <img src="assets/images/logo-light.png" alt="" width="50px" class="nk-nav-logo-onscroll">
+                        <img src="assets/images/logo.png" alt="" width="50px">
                     </a>
-
+                </div>
                     <ul class="nk-nav nk-nav-right hidden-md-down" data-nav-mobile="#nk-nav-mobile">
                         <li>
                             <a href="index.html#about">Home</a>
@@ -143,53 +151,85 @@ START: Navbar Mobile
 
     <div class="nk-main">
         <div class="nk-header-title nk-header-title-full">
-            <div class="bg-image">
-                <div style="background-image: url('assets/images/img/2.jpg');"></div>
-                <div class="bg-image-overlay" style="background-color: rgba(12, 12, 12, 0.6);"></div>
-            </div>
-            <div class="nk-header-table">
-                <div class="nk-header-table-cell">
-                    <div class="container">
-
-                        <h2 class="nk-subtitle text-white"
+            <div class="wrapper">
+                <ul class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15" id="scene">
+                    <li class="layer" data-depth="0.00">
+                    </li>
+                    <!-- BG -->
+    
+                    <li class="layer" data-depth="0.10">
+                        <div class="background">
+                        </div>
+                    </li>
+    
+                    <!-- Hero -->
+    
+                    <li class="layer" data-depth="0.20">
+                        <div class="title">
+                            <h2 class="nk-subtitle text-white"
                             style="font-family: 'Josefin Sans', sans-serif; line-height: 50px;">WhatAbout Agency Angola
                         </h2>
-
-
-                        <h1 class="nk-title display-3 text-white"
+                            <span class="line"></span>
+                        </div>
+                    </li>
+    
+                    <li class="layer" data-depth="0.30">
+                        <div class="hero">
+                            <h1 class="nk-title display-3 text-white"
                             style="line-height: 50px; letter-spacing: 5px; font-family: 'Josefin Sans', sans-serif; text-transform: uppercase; font-weight: 600; ">
                             Lesliana Pereira</h1>
-
-                        <h1 class="nk-title display-3 text-white"><em class="fw-400">fashion - beauty - lifestyle -
+                            <div class="nk-gap"></div>
+                            <h1 class="nk-title display-3 text-white" style="letter-spacing: 3px;"><em class="fw-400">fashion - beauty - lifestyle -
                                 entertainment - sport</em>
                         </h1>
-
-
-                        <div class="nk-gap"></div>
-                        <div class="nk-header-text text-white">
-                            <div class="nk-gap-4"></div>
                         </div>
-
-
+                    </li>
+                    <!-- Flakes -->
+    
+                    
+    
+                    <li class="layer" data-depth="0.50">
+                        <div class="depth-2 flake1">
+                            <img alt="flake" src="./assets/images/flakes/depth2/flakes1.png">
+                        </div>
+    
+                        <div class="depth-2 flake2">
+                            <img alt="flake" src="./assets/images/flakes/depth2/flakes2.png">
+                        </div>
+                    </li>
+    
+                    
+    
+                    <li class="layer" data-depth="0.80">
+                        <div class="depth-4">
+                            <img alt="flake" src="./assets/images/flakes/depth4/flakes.png">
+                        </div>
+                    </li>
+    
+                    <li class="layer" data-depth="1.00">
+                        <div class="depth-5">
+                            <img alt="flake" src="./assets/images/flakes/depth5/flakes.png">
+                        </div>
+                    </li>
+                    <!-- Contact -->
+    
+                    <div>
+                        <a class="nk-header-title-scroll-down text-white" href="#nk-header-title-scroll-down">
+                            <span class="pe-7s-angle-down"></span>
+                            <div id="nk-header-title-scroll-down"></div>
+                        </a>
                     </div>
-                </div>
-            </div>
-
-            <div>
-                <a class="nk-header-title-scroll-down text-white" href="#nk-header-title-scroll-down">
-                    <span class="pe-7s-angle-down"></span>
-                    <div id="nk-header-title-scroll-down"></div>
-                </a>
+                </ul>
             </div>
 
         </div>
 
-        
+
 
         <!-- END: Header Title -->
         <div class="col-12">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2">
+                <div class="col-xs-0 col-sm-8 col-sm-offset-2">
 
                     <div class="nk-gap-2 mt-12"></div>
                     <!-- START: Posts List -->
@@ -221,7 +261,7 @@ START: Navbar Mobile
                                 </div>-->
 
 
-                                
+
                                 <h2 class="nk-post-title1 h4">Lesliana Pereira</h2>
                                 <h2 class="nk-post-title h4"><a
                                         href="mailto:nicosdiogojoao@gmail.com?subject=A%20contactar%20Lesliana%20Pereira&body=Testando%20E-mail%20">Contacte-me</a>
@@ -259,34 +299,157 @@ START: Navbar Mobile
                                         </a>
                                     </div>
                                     <ul id="myTab" class="nk-isotope-filter" style="text-align: center;">
-                                        <a href="#Description" data-toggle="tab">
-                                            <li>Descrição</li>
+                                        <a href="#Description" onclick="iniciarContador(); iniciarContador0(); iniciarContador1(); iniciarContador2(); iniciarContador3(); iniciarContador4(); iniciarContador5(); iniciarContador6(); " data-toggle="tab">
+
+                                            <li>Alcance</li>
                                         </a>
                                         <a class="active" href="#Information" data-toggle="tab">
                                             <li>Informação</li>
                                         </a>
                                         <a href="#Galleria" data-toggle="tab">
-                                            <li>Galleria</li>
+                                            <li>Galeria</li>
                                         </a>
                                     </ul>
-
-
 
 
                                     <div id="myTabContent" class="tab-content">
 
                                         <div class="tab-pane fade" id="Description">
-                                            <p>Lorem ipsum dolor ut sit ame dolore adipiscing elit, sed sit nonumy nibh
-                                                sed euismod laoreet
-                                                dolore magna aliquarm erat sit volutpat Nostrud duis molestie at dolore.
-                                                Lorem ipsum dolor ut sit
-                                                ame dolore adipiscing elit, sed sit nonumy nibh sed euismod laoreet
-                                                dolore magna aliquarm erat sit
-                                                volutpat Nostrud duis molestie at dolore. Lorem ipsum dolor ut sit ame
-                                                dolore adipiscing elit, sed
-                                                sit nonumy nibh sed euismod laoreet dolore magna aliquarm erat sit
-                                                volutpat Nostrud duis molestie
-                                                at dolore. </p>
+
+                                            <div class="goods-page">
+                                                <div class="goods-data compare-goods clearfix">
+                                                    <div class="table-wrapper-responsive">
+                                                        <table class="datasheet" style="padding: 5px;"
+                                                            summary="Detalhes Dos Carros">
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    <h2>Detalhes de alcance</h2>
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <i style="font-size: 3rem"
+                                                                        class="fa fa-instagram"></i>
+                                                                </td>
+
+                                                                <td class="compare-item">
+                                                                    <i style="font-size: 3rem"
+                                                                        class="fab fa-tiktok"></i>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    Total de Seguidores
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span style="font-weight: 400;"
+                                                                        id="contador">0</span>
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                   <span id="contadortiktok0">0</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    Total de Views
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span style="font-weight: 400;"
+                                                                    id="contador1">0</span>
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span id="contadortiktok2">0</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    Total de Reações
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span id="contador4">0</span>
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span id="contadortiktok1">0</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    Total de Publicações
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span id="contador5">0</span>
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span id="contadortiktok3">0</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    Alcance
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span style="font-weight: 400;"
+                                                                    id="contador1">820.7K</span>
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <span style="font-weight: 400;"
+                                                                    id="contador1">620.7K</span>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <th colspan="3">
+                                                                    <h2>Media</h2>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    M. Alcance/Pub.
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                   460k
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    317k
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">
+                                                                    Eficacia
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    95%
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    72%
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="compare-info">&nbsp;</td>
+                                                                <td class="compare-item">
+                                                                    <a class="btn btn-primary"
+                                                                        href="https://www.instagram.com/leslianapereira/">Visitar</a><br>
+                                                                </td>
+                                                                <td class="compare-item">
+                                                                    <a class="btn btn-primary"
+                                                                        href="javascript:;">Visitar</a><br>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <p class="padding-top-20"><strong>Noticia:</strong> Lorem ipsum
+                                                            dolor sit amet, consectetuer
+                                                            adipiscing elit, sed diam sit nonummy nibh euismod tincidunt
+                                                            ut laoreet dolore magna
+                                                            aliquarm erat sit volutpat. Nostrud exerci tation
+                                                            ullamcorper suscipit lobortis nisl
+                                                            aliquip commodo consequat. </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
                                         </div>
                                         <!-- Especificações-->
                                         <div class="tab-pane fade in active" id="Information">
@@ -728,7 +891,15 @@ START: Navbar Mobile
         <script src="assets/js/combined.js"></script>
         <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/js.js" type="text/javascript"></script>
         <!-- END: Scripts -->
+
+
+         <!-- Javascript -->
+         <script src="assets/js/plugins.js"></script> 
+         <script src="assets/js/jquery.countdown.min.js"></script> 
+         <script src="assets/js/main.js"></script>
+ 
 
 
 </body>
