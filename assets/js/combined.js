@@ -55,6 +55,7 @@ function atualizarContador() {
 
 // Função para iniciar o contador
 function iniciarContador() {
+    contadorAtual = 0; // Reinicia o contador para zero
     intervalo = setInterval(atualizarContador, 5); // Corrigido para intervalo
 }
 
@@ -87,7 +88,8 @@ function atualizarContador0() {
 
 // Função para iniciar o contador
 function iniciarContador0() {
-    intervalo0 = setInterval(atualizarContador0, 5); // Corrigido para intervalo0
+    contadorAtual0 = 0; // Reinicia o contador para zero
+    intervalo0 = setInterval(atualizarContador0, 5); // Inicia o intervalo novamente
 }
 
 // Função para formatar o contador
@@ -120,7 +122,8 @@ function atualizarContador1() {
 
 // Função para iniciar o contador
 function iniciarContador1() {
-    intervalo1 = setInterval(atualizarContador1, 1); // Corrigido para intervalo1
+    contadorAtual1 = 0; // Reinicia o contador para zero
+    intervalo1 = setInterval(atualizarContador1, 1); // Inicia o intervalo novamente
 }
 
 // Função para formatar o contador
@@ -154,6 +157,7 @@ function atualizarContador2() {
 
 // Função para iniciar o contador
 function iniciarContador2() {
+    contadorAtual2 = 0; // Reinicia o contador para zero
     intervalo2 = setInterval(atualizarContador2, 1); // Corrigido para intervalo2
 }
 
@@ -189,6 +193,7 @@ function atualizarContador3() {
 
 // Função para iniciar o contador
 function iniciarContador3() {
+    contadorAtual3 = 0; // Reinicia o contador para zero
     intervalo3 = setInterval(atualizarContador3, 1); // Corrigido para intervalo3
 }
 
@@ -213,11 +218,11 @@ var contadorAtual4 = 0;
 // Função para atualizar o contador a cada 100 milissegundos
 function atualizarContador4() {
     // Incrementa o contador em 10
-    contadorAtual4 += 800;
+    contadorAtual4 += 600;
     // Atualiza o texto do contador formatando-o adequadamente
     document.getElementById('contador4').textContent = formatarContador4(contadorAtual4); // Corrigido para contadortiktok1
     // Verifica se o contador atingiu o limite (10000)
-    if (contadorAtual4 >= 970357) {
+    if (contadorAtual4 >= 970307) {
         // Parar o contador quando atingir o limite
         clearInterval(intervalo4);
     }
@@ -225,6 +230,7 @@ function atualizarContador4() {
 
 // Função para iniciar o contador
 function iniciarContador4() {
+    contadorAtual4 = 0; // Reinicia o contador para zero
     intervalo4 = setInterval(atualizarContador4, 1); // Corrigido para intervalo4
 }
 
@@ -260,6 +266,7 @@ function atualizarContador5() {
 
 // Função para iniciar o contador
 function iniciarContador5() {
+    contadorAtual5 = 0; // Reinicia o contador para zero
     intervalo5 = setInterval(atualizarContador5, 1); // Corrigido para intervalo5
 }
 
@@ -294,6 +301,7 @@ function atualizarContador6() {
 
 // Função para iniciar o contador
 function iniciarContador6() {
+    contadorAtual6 = 0; // Reinicia o contador para zero
     intervalo6 = setInterval(atualizarContador6, 50); // Corrigido para intervalo6
 }
 
@@ -305,5 +313,78 @@ function formatarContador6(valor6) {
         return (valor6 / 1000).toFixed(1) + 'k';
     } else {
         return valor6.toString();
+    }
+}
+
+
+
+/********************************************************************************** */
+var intervalo7;
+var contadorAtual7 = 0;
+
+// Função para atualizar o contador a cada 100 milissegundos
+function atualizarContador7() {
+    // Incrementa o contador em 10
+    contadorAtual7 += 800;
+    // Atualiza o texto do contador formatando-o adequadamente
+    document.getElementById('contador6').textContent = formatarContador7(contadorAtual7); // Corrigido para contadortiktok1
+    // Verifica se o contador atingiu o limite (10000)
+    if (contadorAtual7 >= 820700) {
+        // Parar o contador quando atingir o limite
+        clearInterval(intervalo7);
+    }
+}
+
+// Função para iniciar o contador
+function iniciarContador7() {
+    contadorAtual7 = 0; // Reinicia o contador para zero
+    intervalo7 = setInterval(atualizarContador7, 1); // Corrigido para intervalo7
+}
+
+// Função para formatar o contador
+function formatarContador7(valor7) {
+    if (valor7 >= 1000000) {
+        return (valor7 / 1000000).toFixed(1) + 'M';
+    } else if (valor7 >= 1000) {
+        return (valor7 / 1000).toFixed(1) + 'k';
+    } else {
+        return valor7.toString();
+    }
+}
+
+
+
+
+/********************************************************************************** */
+var intervalo8;
+var contadorAtual8 = 0;
+
+// Função para atualizar o contador a cada 100 milissegundos
+function atualizarContador8() {
+    // Incrementa o contador em 10
+    contadorAtual8 += 600;
+    // Atualiza o texto do contador formatando-o adequadamente
+    document.getElementById('contadortiktok4').textContent = formatarContador8(contadorAtual8); // Corrigido para contadortiktok1
+    // Verifica se o contador atingiu o limite (10000)
+    if (contadorAtual8 >= 620700) {
+        // Parar o contador quando atingir o limite
+        clearInterval(intervalo8);
+    }
+}
+
+// Função para iniciar o contador
+function iniciarContador8() {
+    contadorAtual8 = 0; // Reinicia o contador para zero
+    intervalo8 = setInterval(atualizarContador8, 1); // Corrigido para intervalo8
+}
+
+// Função para formatar o contador
+function formatarContador8(valor8) {
+    if (valor8 >= 1000000) {
+        return (valor8 / 1000000).toFixed(1) + 'M';
+    } else if (valor8 >= 1000) {
+        return (valor8 / 1000).toFixed(1) + 'k';
+    } else {
+        return valor8.toString();
     }
 }
