@@ -5549,7 +5549,7 @@ html {
 }
 
 body {
-    font-family: Work Sans, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1.65;
     letter-spacing: .004em;
     -webkit-font-smoothing: antialiased;
@@ -7942,8 +7942,10 @@ h4 {
 }
 
 .nk-contact-info>li>strong {
-    color: #171717;
-    padding-right: 5px
+    color: #fafafa;
+    padding-right: 5px;
+    font-weight: 200;
+    letter-spacing: 1px;
 }
 
 .nk-pagination {
@@ -8103,7 +8105,7 @@ blockquote.nk-blockquote-style-1>p:after {
 }
 
 blockquote.nk-blockquote-style-1 cite {
-    font-family: Work Sans, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: .96rem;
     font-weight: 500;
     font-style: normal;
