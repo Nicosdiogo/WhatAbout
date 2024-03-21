@@ -35,3 +35,99 @@ $(document).ready(function() {
     });
 });
 
+
+
+/***************************************************************************** */
+
+document.addEventListener('DOMContentLoaded', function () {
+    const gridItems = document.querySelectorAll('.grid-item');
+    const modal = document.querySelector('.modal');
+    const modalImg = document.querySelector('.modal-content');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentImageIndex = 0;
+
+    // Função para exibir a imagem no modal
+    function showModal(index) {
+        modal.style.display = 'block';
+        modalImg.src = gridItems[index].querySelector('img').src;
+        currentImageIndex = index;
+    }
+
+    // Exibe a imagem atual quando um item da grade é clicado
+    gridItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            showModal(index);
+        });
+    });
+
+    // Fecha o modal quando o botão fechar é clicado
+    const closeModal = document.querySelector('.close');
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Fecha o modal quando a tecla Esc é pressionada
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') {
+            modal.style.display = 'none';
+        }
+    });
+
+   
+
+    // Avança para a próxima imagem quando o botão próximo é clicado ou seta para a direita é pressionada
+    function nextImage() {
+        currentImageIndex++;
+        if (currentImageIndex >= gridItems.length) {
+            currentImageIndex = 0;
+        }
+        showModal(currentImageIndex);
+    }
+
+    nextButton.addEventListener('click', nextImage);
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowRight') {
+            nextImage();
+        }
+    });
+
+    // Retrocede para a imagem anterior quando o botão anterior é clicado ou seta para a esquerda é pressionada
+    function prevImage() {
+        currentImageIndex--;
+        if (currentImageIndex < 0) {
+            currentImageIndex = gridItems.length - 1;
+        }
+        showModal(currentImageIndex);
+    }
+
+    prevButton.addEventListener('click', prevImage);
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowLeft') {
+            prevImage();
+        }
+    });
+
+    // Adiciona eventos de toque (touch) para dispositivos móveis para trocar de imagem deslizando
+    let touchstartX = 0;
+    let touchendX = 0;
+    modal.addEventListener('touchstart', function (event) {
+        touchstartX = event.changedTouches[0].screenX;
+    });
+
+    modal.addEventListener('touchend', function (event) {
+        touchendX = event.changedTouches[0].screenX;
+        handleGesture();
+    });
+
+    function handleGesture() {
+        if (touchendX < touchstartX) {
+            // Swipe para a esquerda
+            nextImage();
+        }
+        if (touchendX > touchstartX) {
+            // Swipe para a direita
+            prevImage();
+        }
+    }
+});
