@@ -10008,7 +10008,7 @@ a:hover>.nk-icon-search:after {
 
 .nano>.nano-pane {
     width: 6px;
-    background: rgba(0, 0, 0, .4);
+    background: rgba(255, 0, 0, 0.4);
     position: absolute;
     top: 0;
     right: 0;

@@ -103,15 +103,20 @@
     <!--
     START: Navbar Mobile
 -->
-    <nav class="nk-navbar nk-navbar-full nk-navbar-align-center nk-nav-close nk-navbar-full-toggle" id="nk-nav-mobile">
-        <div style="width: 75%; float: right; height: 100%; background-color: #fff; z-index: 1000;">
+    <nav class="nk-navbar nk-navbar-full nk-navbar-align-center" id="nk-nav-mobile">
+        <div class="nk-navbar-full-toggle nk-nav-close" style=" position:absolute; float: left;width:25%; height: 100%;">
+           
+        </div>
+        <div style="width: 75%; float: right; height: 100%; background-color: #fff; z-index: 99988;">
+           
             <div class="nk-nav-table">
+                
                 <div class="nk-nav-row-full nk-nav-row">
                     <div class="nano">
                         <div class="nano-content">
                             <div class="nk-nav-table">
                                 <div class="nk-nav-row nk-nav-row-full nk-nav-row-center nk-navbar-mobile-content">
-                                    <ul class="nk-nav"> 
+                                    <ul class="nk-nav" style=" z-index: 999999;"> 
                                         <img src="assets/images/logo.png" alt="" width="90%" style="margin-top: -20px;">
 
                                         <!-- Here will be inserted menu from [data-mobile-menu="#nk-nav-mobile"] -->
@@ -222,7 +227,7 @@
                                 </div>
                             </div>
 
-                            <div class="nk-isotope-item" data-filter="Mockup">
+                            <div class="nk-isotope-item" data-filter="principal">
                                 <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
 
                                     <div class="carousel" data-interval="7000">
@@ -471,9 +476,9 @@
 
                 <ul class="nk-isotope-filter nk-isotope-filter-active">
                     <li class="active" data-filter="*">All</li>
-                    <li data-filter="Branding">DESENVOLVIMENTO</li>
-                    <li data-filter="Print">PRINCIPAL</li>
-                    <li data-filter="Photography">CATEGORIAS</li>
+                    <li data-filter="desenvolvimento">DESENVOLVIMENTO</li>
+                    <li data-filter="principal">PRINCIPAL</li>
+                    <li class="drop" data-filter="Photogdaphy">Musica</li>
 
                 </ul>
                 <!-- END: Filter -->
@@ -481,7 +486,7 @@
                 <div class="nk-portfolio-list nk-isotope nk-isotope-3-cols">
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Mockup">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-Lesliana.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -499,7 +504,7 @@
                     </div>
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-right" data-filter="Design">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-right" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-YonazaAmeida.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -516,7 +521,7 @@
                     </div>
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Branding">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-JessiMadalena.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -533,7 +538,7 @@
                     </div>
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Print">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-MayaCool.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -550,7 +555,7 @@
                     </div>
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-right" data-filter="Print">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-right" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-TelmaLee.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -567,7 +572,7 @@
                         <h4>Telma Lee</h4>
                     </div>
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Design">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-Masvelhoaguaderaz.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -586,7 +591,7 @@
                     </div>
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Branding">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="desenvolvimento">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-BrunoTuga.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -604,7 +609,7 @@
                     </div>
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-right" data-filter="Photography">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-right" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-SarriSarri.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -622,7 +627,7 @@
                     </div>
 
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Photography">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-VilmaJosiana.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -641,7 +646,7 @@
                         <h4>Vilma Josiana</h4>
                     </div>
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Photography">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-MellChaves.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -660,7 +665,7 @@
                         <h4>Mell Chaves</h4>
                     </div>
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Photography">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-Yunika.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
@@ -677,7 +682,7 @@
                         <h4>Yunika Gaspar</h4>
                     </div>
 
-                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="Photography">
+                    <div class="nk-isotope-item nk-isotope-item1 animate-left" data-filter="principal">
                         <div class="nk-portfolio-item nk-portfolio-item-square nk-portfolio-item-info-style-1">
                             <a href="perfil-CleytonM.html" class="nk-portfolio-item-link"></a>
                             <div class="nk-portfolio-item-image">
