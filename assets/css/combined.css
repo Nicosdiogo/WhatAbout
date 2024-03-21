@@ -756,6 +756,7 @@ code {
     padding-left: 15px
 }
 
+
 @media (min-width:576px) {
 
     .col-lg,
@@ -10856,28 +10857,32 @@ Separator
 
 
 .apt-bottom h1{
+    position: relative;
     font-size:2.125rem;
     font-family: 'Josefin Sans', serif;
     text-transform: none;
-    font-weight: 700;
-    padding: 3px 55px;
+    padding: 3px 15px;
     color: #181818;
     font-weight: 800;
+    z-index: 2;
+    letter-spacing: -1px;
 }
 
 .apt-bottom p{
+    position: relative;
     font-size:1.125rem;
     font-family: 'Josefin Sans', serif;
     text-transform: none;
     font-weight: 300;
     text-align: justify;
-    padding: 3px 18px;
+    padding: 3px 15px;
     color: #181818;
     font-weight: 800;
+    z-index: 2;
 }
 
 .bookmarkB.yellowB1[_ngcontent-vus-c24] {
-    background-color: #181818;
+    background-color: #181818b8;
 }
 .bookmarkB[_ngcontent-vus-c24] {
     width: 100px;
@@ -10891,47 +10896,94 @@ Separator
 }
 
 .bookmarkB.yellowB[_ngcontent-vus-c23] {
-    background-color: #181818;
+    background-color: #181818b8;
 }
 .bookmarkB[_ngcontent-vus-c23] {
     width: 100px;
     height: 100px;
-    border-radius: 20px;
+    border-radius: 123px;
     position: absolute;
-    left: -60px;
-    top: auto;
+    left: 3px;
+    top: 2px;
     bottom: auto;
     transform: rotate(45deg);
 }
 
 
+.bookmarkB1.yellowB1[_ngcontent-vus-c23] {
+    background-color: transparent;
+}
+.bookmarkB1[_ngcontent-vus-c23] {
+    width: 50px;
+    height: 50px;
+    border-radius: 123px;
+    position: absolute;
+    left: 88px;
+    top: 80px;
+    bottom: auto;
+    transform: rotate(45deg);
+    border: 5px solid #181818b8;
+}
+
+
+.bookmarkB2.yellowB2[_ngcontent-vus-c23] {
+    background-color: transparent;
+}
+.bookmarkB2[_ngcontent-vus-c23] {
+    width: 250px;
+    height: 250px;
+    border-radius: 123px;
+    position: absolute;
+    right: -20px;
+    top: 108px;
+    bottom: auto;
+    transform: rotate(45deg);
+    border: 5px solid #181818b8;
+}
+
 
 .bookmarkB1.yellowB2[_ngcontent-vus-c20] {
-    background-color: #181818;
+    background-color: #525252;
 }
 .bookmarkB1[_ngcontent-vus-c20] {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
     position: absolute;
-    right: -50px;
-    top: auto;
-    bottom: 20px;
+    left: 8px;
+    top: 101px;
+    bottom: auto;
     transform: rotate(45deg);
 }
 
 .bookmarkB1.yellowB3[_ngcontent-vus-c21] {
-    background-color: #181818;
+    background-color: #525252;
 }
 .bookmarkB1[_ngcontent-vus-c21] {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
+    width: 40px;
+    height: 20px;
+    border-radius: 63px;
     position: absolute;
-    left: -60px;
-    top: auto;
-    bottom: 20px;
+    left: 106px;
+    top: 14px;
+    bottom: auto;
+    transform: rotate(20deg);
+}
+
+.bookmarkB1.yellowB3[_ngcontent-vus-c21] {
+    background-color: #525252;
+}
+.bookmarkB1[_ngcontent-vus-c21] {
+    width: 60px;
+    height: 60px;
+    border-radius: 11px;
+    position: absolute;
+    left: auto;
+    right: 57px;
+    top: 19px;
+    bottom: auto;
     transform: rotate(45deg);
+
 }
 
 
